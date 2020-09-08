@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+
+    <script src="~/lib/popper.js/esm/popper.js"></script>
+    <link href="~/content/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="lead">
+                    <img class="img-responsive" alt="Bethany's Pie Shop'" src="~/Images/bethanylogo.png" />
+                </p>
+            </div>
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>
