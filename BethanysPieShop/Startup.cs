@@ -34,6 +34,10 @@ namespace BethanysPieShop
 
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository,CategoryRepository>();
+            services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
+            //Get access to session objects in classes (by default only has access in controllers without AddHttpContextAccessor)
+            services.AddHttpContextAccessor();
+            services.AddSession();
             //Add suport  for MVC
             services.AddControllersWithViews();
             //NET CORE 2.0
@@ -52,6 +56,8 @@ namespace BethanysPieShop
             app.UseHttpsRedirection();
             //By default will search in directoy wwwrot
             app.UseStaticFiles();
+            //be sure it is before UseRouting!
+            app.UseSession();
             //UseRouting and UseEndpoints enables to MVC handle incoming request
             app.UseRouting();
 
