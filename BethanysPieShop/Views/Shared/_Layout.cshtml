@@ -11,6 +11,7 @@
 
     <script src="~/lib/popper.js/esm/popper.js"></script>
     <link href="~/content/site.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0b191f0c83.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -22,13 +23,10 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                @*<li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>*@
 
-
-                <li class="nav-item"><a class="nav-link" asp-controller="Pie" asp-action="List">Pies</a></li>
-
+                @await Component.InvokeAsync("CategoryMenu")
+                @await Component.InvokeAsync("ShoppingCartSummary")
+                <li class="nav-item"><a class="nav-link" asp-controller="Contact" asp-action="Index">Contact</a></li>
             </ul>
 
         </div>
