@@ -1,4 +1,14 @@
-﻿<!DOCTYPE html>
+﻿@using System.Security.Claims
+@using System.Threading.Tasks
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject IAuthorizationService AuthorizationService
+@inject UserManager<IdentityUser> UserManager
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -27,6 +37,11 @@
                 @await Component.InvokeAsync("CategoryMenu")
                 @await Component.InvokeAsync("ShoppingCartSummary")
                 <li class="nav-item"><a class="nav-link" asp-controller="Contact" asp-action="Index">Contact</a></li>
+                @if (SignInManager.IsSignedIn(User))// && User.IsInRole("Administrator"))
+                {
+                    @await Component.InvokeAsync("AdminMenu")
+                }
+                <partial name="_LoginPartial" />
             </ul>
 
         </div>
@@ -45,5 +60,6 @@
             </div>
         </div>
     </div>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
