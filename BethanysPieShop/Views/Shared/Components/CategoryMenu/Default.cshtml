@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Category>
 
-<li class="dropdown">
+@*<li class="dropdown">
     <a asp-controller="Pie"
        asp-action="Index"
        class="dropdown-toggle" data-toggle="dropdown">Pies<b class="caret"></b></a>
@@ -17,4 +17,24 @@
             <a asp-controller="Pie" asp-action="List" asp-route-Category="">View all pies</a>
         </li>
     </ul>
-</li>
+</li>*@
+
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Pies
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        @foreach (var category in Model)
+        {
+
+            <a asp-controller="Pie" asp-action="List"
+               asp-route-category="@category.CategoryName" class="dropdown-item">@category.CategoryName</a>
+
+        }
+        <div class="dropdown-divider"></div>
+        <a asp-controller="Pie" asp-action="List" asp-route-Category="" class="dropdown-item">View all pies</a>
+
+
+
+    </div>
+</div>

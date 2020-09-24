@@ -6,6 +6,7 @@ using BethanysPieShop.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,6 +33,18 @@ namespace BethanysPieShop
             services.AddDbContext<AppDbContext>(options =>
                   options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 8;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireUppercase = true;
+                options.User.RequireUniqueEmail = true;
+
+            }).AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
+
+
+          //  services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppDbContext>();
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository,CategoryRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
@@ -41,6 +54,8 @@ namespace BethanysPieShop
             services.AddSession();
             //Add suport  for MVC
             services.AddControllersWithViews();
+            //Because identity uses Razor pages
+            services.AddRazorPages();
             //NET CORE 2.0
           //  services.AddMvc();
         }
@@ -60,7 +75,11 @@ namespace BethanysPieShop
             //be sure it is before UseRouting!
             app.UseSession();
             //UseRouting and UseEndpoints enables to MVC handle incoming request
+          
             app.UseRouting();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
@@ -75,6 +94,8 @@ namespace BethanysPieShop
                   name:"default",
                   pattern:"{controller=Home}/{action=Index}/{id?}"
                     );
+
+                endpoints.MapRazorPages();
             });
         }
     }
