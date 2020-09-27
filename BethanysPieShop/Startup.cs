@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BethanysPieShop.Auth;
 using BethanysPieShop.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,18 +34,18 @@ namespace BethanysPieShop
             services.AddDbContext<AppDbContext>(options =>
                   options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequiredLength = 8;
                 options.Password.RequireNonAlphanumeric = true;
                 options.Password.RequireUppercase = true;
                 options.User.RequireUniqueEmail = true;
 
-            }).AddEntityFrameworkStores<AppDbContext>()
-    .AddDefaultTokenProviders();
+            }).AddEntityFrameworkStores<AppDbContext>();
 
 
-          //  services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppDbContext>();
+
+          //  services.AddDefaultIdentity<ApplicationUser>().AddEntityFrameworkStores<AppDbContext>();
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository,CategoryRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();

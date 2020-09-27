@@ -1,5 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Identity;
-@model IEnumerable<IdentityUser>
+@model IEnumerable<ApplicationUser>
 
 <h2>User management</h2>
 
@@ -16,7 +16,7 @@ else
             <th>Email</th>
             <th>Actions</th>
         </tr>
-        @foreach (IdentityUser user in Model)
+        @foreach (ApplicationUser user in Model)
         {
             <tr>
                 <td>@user.Id</td>
