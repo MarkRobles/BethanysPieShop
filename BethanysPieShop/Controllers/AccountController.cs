@@ -27,7 +27,7 @@ namespace BethanysPieShop.Controllers
         {
             return View(new LoginViewModel
             {
-                ReturnUrl = returnUrl
+                ReturnUrl =  returnUrl
             });
         }
 
