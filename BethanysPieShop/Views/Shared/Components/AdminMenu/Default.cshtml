@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<BethanysPieShop.Components.AdminMenuItem>
 
-<li class="dropdown">
+@*<li class="dropdown">
     <a asp-controller="Admin"
        asp-action="Index"
        class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
@@ -12,4 +12,18 @@
             </li>
         }
     </ul>
-</li>
+</li>*@
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Admin
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        @foreach (var menuItem in Model)
+        {
+
+            <a asp-controller="Admin" asp-action=@menuItem.ActionValue
+              class="dropdown-item">@menuItem.DisplayValue</a>
+
+        }
+    </div>
+</div>
