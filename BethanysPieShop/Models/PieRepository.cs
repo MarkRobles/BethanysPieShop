@@ -34,5 +34,18 @@ namespace BethanysPieShop.Models
         {
             return _appDbContext.Pies.FirstOrDefault(p=> p.PieId == pieId);
         }
+
+
+        public void UpdatePie(Pie pie)
+        {
+            _appDbContext.Pies.Update(pie);
+            _appDbContext.SaveChanges();
+        }
+
+        public void CreatePie(Pie pie)
+        {
+            _appDbContext.Pies.Add(pie);
+            _appDbContext.SaveChanges();
+        }
     }
 }

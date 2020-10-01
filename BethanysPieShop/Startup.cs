@@ -55,6 +55,15 @@ namespace BethanysPieShop
             services.AddSession();
             //Add suport  for MVC
             services.AddControllersWithViews();
+
+            //Claims-based
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdministratorOnly", policy => policy.RequireRole("Administrator"));
+                options.AddPolicy("DeletePie", policy => policy.RequireClaim("Delete Pie", "Delete Pie"));
+                options.AddPolicy("AddPie", policy => policy.RequireClaim("Add Pie", "Add Pie"));
+            });
+
             //Because identity uses Razor pages
             services.AddRazorPages();
             //NET CORE 2.0
@@ -81,6 +90,7 @@ namespace BethanysPieShop
 
             app.UseAuthentication();
             app.UseAuthorization();
+            
 
             app.UseEndpoints(endpoints =>
             {
