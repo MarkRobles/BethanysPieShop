@@ -17,6 +17,8 @@ namespace BethanysPieShop.ViewModels
         [Required(ErrorMessage = "Please enter the user email")]
         public string Email { get; set; }
 
+        public List<string> UserClaims { get; set; }
+
         [Required(ErrorMessage = "Please enter the birth date")]
         [Display(Name = "Birth date")]
         [DataType(DataType.Date)]

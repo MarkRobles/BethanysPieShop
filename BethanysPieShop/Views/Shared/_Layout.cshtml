@@ -40,6 +40,11 @@
                 @if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrators"))
                 {
                     @await Component.InvokeAsync("AdminMenu")
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="PieManagement"
+                           asp-action="Index">Pie Management</a>
+                    </li>
                 }
                 <partial name="_LoginPartial" />
             </ul>
@@ -61,5 +66,6 @@
         </div>
     </div>
     @RenderSection("Scripts", required: false)
+
 </body>
 </html>
