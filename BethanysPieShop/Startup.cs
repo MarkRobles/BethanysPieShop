@@ -43,9 +43,9 @@ namespace BethanysPieShop
 
             }).AddEntityFrameworkStores<AppDbContext>();
 
+            services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, AppClaimsPrincipalFactory>();
 
-
-          //  services.AddDefaultIdentity<ApplicationUser>().AddEntityFrameworkStores<AppDbContext>();
+            //  services.AddDefaultIdentity<ApplicationUser>().AddEntityFrameworkStores<AppDbContext>();
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository,CategoryRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
@@ -62,6 +62,7 @@ namespace BethanysPieShop
                 options.AddPolicy("AdministratorOnly", policy => policy.RequireRole("Administrator"));
                 options.AddPolicy("DeletePie", policy => policy.RequireClaim("Delete Pie", "Delete Pie"));
                 options.AddPolicy("AddPie", policy => policy.RequireClaim("Add Pie", "Add Pie"));
+                options.AddPolicy("MinimumOrderAge", policy => policy.Requirements.Add(new MinimumOrderAgeRequirement(18)));
             });
 
             //Because identity uses Razor pages

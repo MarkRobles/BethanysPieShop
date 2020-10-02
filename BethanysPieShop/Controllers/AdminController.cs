@@ -77,7 +77,15 @@ namespace BethanysPieShop.Controllers
                 return RedirectToAction("UserManagement", _userManager.Users);
 
             var claims = await _userManager.GetClaimsAsync(user);
-            var vm = new EditUserViewModel() { Id = user.Id, Email = user.Email, UserName = user.UserName, UserClaims = claims.Select(c => c.Value).ToList() };
+            var vm = new EditUserViewModel() { 
+                Id = user.Id,
+                Email = user.Email,
+                UserName = user.UserName,
+                 Birthdate = user.Birthdate,
+                  City = user.City,
+                   Country = user.Country,
+                UserClaims = claims.Select(c => c.Value).ToList()
+            };
 
             return View(vm);
 
