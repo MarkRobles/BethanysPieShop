@@ -49,6 +49,7 @@ namespace BethanysPieShop
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository,CategoryRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IPieReviewRepository, PieReviewRepository>();
             services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
             //Get access to session objects in classes (by default only has access in controllers without AddHttpContextAccessor)
             services.AddHttpContextAccessor();

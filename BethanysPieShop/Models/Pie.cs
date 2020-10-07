@@ -21,5 +21,6 @@ namespace BethanysPieShop.Models
         public Category Category { get; set; }
 
         public int Notes { get; set; }
+        public virtual List<PieReview> PieReviews { get; set; }
     }
 }

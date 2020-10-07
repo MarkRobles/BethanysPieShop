@@ -32,7 +32,7 @@ namespace BethanysPieShop.Models
 
         public Pie GetPieById(int pieId)
         {
-            return _appDbContext.Pies.FirstOrDefault(p=> p.PieId == pieId);
+            return _appDbContext.Pies.Include(p=> p.PieReviews).FirstOrDefault(p=> p.PieId == pieId);
         }
 
 
