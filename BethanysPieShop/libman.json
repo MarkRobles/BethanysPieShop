@@ -13,6 +13,14 @@
     {
       "library": "twitter-bootstrap@4.5.2",
       "destination": "wwwroot/twitter-bootstrap/"
+    },
+    {
+      "library": "jquery-validate@1.19.2",
+      "destination": "wwwroot/lib/"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.11",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
     }
   ]
 }
