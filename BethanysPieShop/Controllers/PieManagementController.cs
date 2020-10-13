@@ -90,5 +90,42 @@ namespace BethanysPieShop.Controllers
             return View();
         }
 
+
+        public IActionResult QuickEdit()
+        {
+            var pieNames = _pieRepository.AllPies.Select(p => p.Name).ToList();
+            return View(pieNames);
+        }
+
+        [HttpPost]
+        public IActionResult QuickEdit(List<string> pieNames)
+        {
+
+            
+
+
+            //Do awesome things with the pie names here
+            return View();
+        }
+
+        public IActionResult BulkEditPies()
+        {
+            var pieNames = _pieRepository.AllPies.ToList();
+            return View(pieNames);
+        }
+
+        [HttpPost]
+        public IActionResult BulkEditPies(List<Pie> pies)
+        {   
+            foreach (var item in pies)
+            {
+                var pie = _pieRepository.GetPieById(item.PieId);
+                pie.Name = item.Name;
+                _pieRepository.UpdatePie(pie);
+            }
+            //Do awesome things with the pie here
+            return View(pies);
+        }
+
     }
 }
