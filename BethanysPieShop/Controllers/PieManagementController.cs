@@ -130,5 +130,12 @@ namespace BethanysPieShop.Controllers
             return View(pies);
         }
 
+        [AcceptVerbs("Get", "Post")]
+        public IActionResult CheckIfPieNameAlreadyExists([Bind(Prefix = "Pie.Name")] string name)
+        {
+            var pie = _pieRepository.AllPies.FirstOrDefault(p => p.Name == name);
+            return pie == null ? Json(true) : Json("That pie name is already taken");
+        }
+
     }
 }
