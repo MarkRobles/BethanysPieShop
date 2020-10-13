@@ -51,7 +51,10 @@ namespace BethanysPieShop.Controllers
             }
             return View(pieEditViewModel);
         }
-
+        //public IActionResult EditPie([FromRoute] int pieId)
+        //public IActionResult EditPie([FromQuery]int pieId, [FromHeader] string accept)
+        //public IActionResult EditPie([FromQuery]int pieId, 
+        //    [FromHeader(Name = "Accept-Language")] string accept)
         public IActionResult EditPie(int pieId)
         {
             var categories = _categoryRepository.AllCategories;
