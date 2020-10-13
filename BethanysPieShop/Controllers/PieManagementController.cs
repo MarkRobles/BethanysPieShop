@@ -51,7 +51,10 @@ namespace BethanysPieShop.Controllers
             }
             return View(pieEditViewModel);
         }
-
+        //public IActionResult EditPie([FromRoute] int pieId)
+        //public IActionResult EditPie([FromQuery]int pieId, [FromHeader] string accept)
+        //public IActionResult EditPie([FromQuery]int pieId, 
+        //    [FromHeader(Name = "Accept-Language")] string accept)
         public IActionResult EditPie(int pieId)
         {
             var categories = _categoryRepository.AllCategories;
@@ -125,6 +128,13 @@ namespace BethanysPieShop.Controllers
             }
             //Do awesome things with the pie here
             return View(pies);
+        }
+
+        [AcceptVerbs("Get", "Post")]
+        public IActionResult CheckIfPieNameAlreadyExists([Bind(Prefix = "Pie.Name")] string name)
+        {
+            var pie = _pieRepository.AllPies.FirstOrDefault(p => p.Name == name);
+            return pie == null ? Json(true) : Json("That pie name is already taken");
         }
 
     }
