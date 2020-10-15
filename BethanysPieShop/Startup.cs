@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using BethanysPieShop.Auth;
@@ -8,11 +9,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 
 namespace BethanysPieShop
 {
@@ -61,6 +65,30 @@ namespace BethanysPieShop
             services.AddMvc(options =>
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()));
 
+            //LOCALIZATION!
+            services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+            services.AddMvc()
+               .AddViewLocalization(
+                   LanguageViewLocationExpanderFormat.Suffix,
+                   opts => { opts.ResourcesPath = "Resources"; })
+               .AddDataAnnotationsLocalization();
+
+            services.Configure<RequestLocalizationOptions>(
+           options =>
+           {
+               var supportedCultures = new List<CultureInfo>
+               {
+                        new CultureInfo("fr"),
+                        new CultureInfo("fr-FR"),
+                        new CultureInfo("nl"),
+                        new CultureInfo("nl-BE"),
+                        new CultureInfo("en-US")
+               };
+
+               options.DefaultRequestCulture = new RequestCulture("en-US");
+               options.SupportedCultures = supportedCultures;
+               options.SupportedUICultures = supportedCultures;
+           });
 
             //Get access to session objects in classes (by default only has access in controllers without AddHttpContextAccessor)
             services.AddHttpContextAccessor();
@@ -103,7 +131,10 @@ namespace BethanysPieShop
 
             app.UseAuthentication();
             app.UseAuthorization();
-            
+
+
+            app.UseRequestLocalization(app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>().Value);
+
 
             app.UseEndpoints(endpoints =>
             {

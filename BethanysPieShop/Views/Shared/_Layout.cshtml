@@ -79,6 +79,7 @@
                 @RenderBody()
             </div>
             @await Component.InvokeAsync("SystemStatusPage")
+            @await Html.PartialAsync("LanguageSelection")
         </div>
     </div>
 
