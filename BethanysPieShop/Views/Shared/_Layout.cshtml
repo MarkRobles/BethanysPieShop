@@ -50,7 +50,8 @@
 
                 @await Component.InvokeAsync("CategoryMenu")
                 @await Component.InvokeAsync("ShoppingCartSummary")
-                <li class="nav-item"><a class="nav-link" asp-controller="Contact" asp-action="Index">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Contact" asp-action="Index" asp-area="">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index" asp-area="Promo">Promotions</a></li>
                 <li class="nav-item" condition="SignInManager.IsSignedIn(User)"><a a class="nav-link" asp-controller="PieGift" asp-action="Index">Send a pie</a></li>
                 @if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrators"))
                 {
@@ -61,9 +62,15 @@
                            asp-action="Index">Pie Management</a>
                     </li>
                 }
-                <partial name="_LoginPartial" />
-            </ul>
+                <li>
+                    <a asp-controller="Pie" asp-action="Details" asp-route-id="30"
+                       asp-protocol="http" asp-host="www.bethanyspieshop.com" asp-fragment="details">
+                        Pie of the week
+                    </a>
+                </li>
 
+            </ul>
+            <partial name="_LoginPartial" />
         </div>
     </nav>
     <div class="container">
