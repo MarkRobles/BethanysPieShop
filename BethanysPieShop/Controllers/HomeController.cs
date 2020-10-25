@@ -12,7 +12,7 @@ using Microsoft.Extensions.Localization;
 namespace BethanysPieShop.Controllers
 {
 
-
+    [Route("")]
     public class HomeController : Controller
     {
 
@@ -25,7 +25,7 @@ namespace BethanysPieShop.Controllers
             _stringLocalizer = stringLocalizer;
 
         }
-
+        [Route("")]
         public IActionResult Index()
         {
             ViewData["PiesOfTheWeek"] = _stringLocalizer["PiesOfTheWeek"];
@@ -40,7 +40,16 @@ namespace BethanysPieShop.Controllers
         }
 
 
+        [Route("TestUrl")]
+        public IActionResult TestUrl()
+        {
+            var url =
+                Url.Action("Details", "Pie", new { id = 1 });
+            return RedirectToAction(url);
+        }
 
+
+        [Route("[controller]/SetLanguage")]
         public IActionResult SetLanguage(string culture, string returnUrl)
         {
             Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,

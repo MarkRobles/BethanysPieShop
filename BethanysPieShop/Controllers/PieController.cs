@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BethanysPieShop.Controllers
 {
+ 
     public class PieController : Controller
     {
         private readonly IPieRepository _pieRepository;
@@ -23,6 +24,8 @@ namespace BethanysPieShop.Controllers
             _htmlEncoder = htmlEncoder;
         }
 
+        [Route("AllPies")]
+        [Route("ListOfPies")]
         public ViewResult List(string category)
         {
             IEnumerable<Pie> pies;

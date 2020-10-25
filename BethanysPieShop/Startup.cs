@@ -135,6 +135,7 @@ namespace BethanysPieShop
 
             app.UseRequestLocalization(app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>().Value);
 
+        
 
             app.UseEndpoints(endpoints =>
             {
@@ -144,10 +145,20 @@ namespace BethanysPieShop
                 //    await context.Response.WriteAsync("Hello World!");
                 //});
 
+                endpoints.MapControllerRoute(
+                    name:"areas",
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}"
+                    );
 
                 endpoints.MapControllerRoute(
-                  name:"default",
-                  pattern:"{controller=Home}/{action=Index}/{id?}"
+                      name: "categoryfilter",
+                    pattern: "Pie/{action}/{category?}",
+                    defaults:new { Controller ="Pie", Action="List" }                   
+                    );
+
+                endpoints.MapControllerRoute(
+                  name: "default",
+                  pattern: "{controller=Home}/{action=Index}/{id?}"
                     );
 
                 endpoints.MapRazorPages();
