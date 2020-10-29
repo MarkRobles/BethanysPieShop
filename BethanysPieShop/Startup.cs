@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using BethanysPieShop.Auth;
+using BethanysPieShop.Filters;
 using BethanysPieShop.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -16,7 +18,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Options;
+using Serilog;
 
 namespace BethanysPieShop
 {
@@ -67,8 +72,10 @@ namespace BethanysPieShop
 
             //LOCALIZATION!
             services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
-            services.AddMvc()
-               .AddViewLocalization(
+            services.AddMvc(
+             config => { config.Filters.AddService(typeof(TimerAction)); }
+             )
+            .AddViewLocalization(
                    LanguageViewLocationExpanderFormat.Suffix,
                    opts => { opts.ResourcesPath = "Resources"; })
                .AddDataAnnotationsLocalization();
@@ -93,6 +100,10 @@ namespace BethanysPieShop
             //Get access to session objects in classes (by default only has access in controllers without AddHttpContextAccessor)
             services.AddHttpContextAccessor();
             services.AddSession();
+
+
+            //Filters
+            services.AddScoped<TimerAction>();
             //Add suport  for MVC
             services.AddControllersWithViews();
 
@@ -107,18 +118,27 @@ namespace BethanysPieShop
 
             //Because identity uses Razor pages
             services.AddRazorPages();
+            services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_INSTRUMENTATIONKEY"]);
             //NET CORE 2.0
-          //  services.AddMvc();
+            //  services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILoggerFactory loggerFactory)
         {
+
+           // app.UseWelcomePage();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseStatusCodePages();
             }
-
+            else
+            {
+                app.UseExceptionHandler("/AppException");
+            }
+         
 
             app.UseHttpsRedirection();
             //By default will search in directoy wwwrot
@@ -132,6 +152,16 @@ namespace BethanysPieShop
             app.UseAuthentication();
             app.UseAuthorization();
 
+            //loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
+            //loggerFactory = LoggerFactory.Create(builder => builder.AddDebug());
+
+            //Serilog
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .WriteTo.RollingFile(Path.Combine(env.ContentRootPath, "BethanysLogs-{Date}.txt"))
+                .CreateLogger();
+
+            loggerFactory.AddSerilog();
 
             app.UseRequestLocalization(app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>().Value);
 
