@@ -1,0 +1,63 @@
+2020-10-26 21:33:34.116 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-26 21:33:34.257 -06:00 [Information] Hosting environment: "Production"
+2020-10-26 21:33:34.286 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-26 21:33:36.761 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 21:33:36.770 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 21:33:36.773 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 21:35:02.016 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-26 21:35:02.103 -06:00 [Information] Hosting environment: "Development"
+2020-10-26 21:35:02.106 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-26 21:35:03.233 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 21:35:03.238 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 21:35:03.241 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:01:42.513 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-26 22:01:42.639 -06:00 [Information] Hosting environment: "Development"
+2020-10-26 22:01:42.643 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-26 22:02:14.397 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-26 22:02:14.528 -06:00 [Information] Hosting environment: "Development"
+2020-10-26 22:02:14.537 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-26 22:02:16.227 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:02:16.236 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:02:16.239 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:08:10.992 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-26 22:08:11.084 -06:00 [Information] Hosting environment: "Development"
+2020-10-26 22:08:11.093 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-26 22:08:12.731 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:08:12.735 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:08:12.738 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:08:12.814 -06:00 [Information] Action executed - elapsed time: 1248.1723
+2020-10-26 22:14:21.649 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-26 22:14:21.728 -06:00 [Information] Hosting environment: "Development"
+2020-10-26 22:14:21.732 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-26 22:14:23.058 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:14:23.062 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:14:23.065 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:14:23.133 -06:00 [Information] Action executed - elapsed time: 1056.7717
+2020-10-26 22:20:48.753 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-26 22:20:48.836 -06:00 [Information] Hosting environment: "Development"
+2020-10-26 22:20:48.841 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-26 22:20:50.199 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:20:50.204 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:20:50.207 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:20:50.272 -06:00 [Information] Action executed - elapsed time: 1051.7549
+2020-10-26 22:20:59.336 -06:00 [Information] Action executed - elapsed time: 215.0196
+2020-10-26 22:21:01.344 -06:00 [Information] Action executed - elapsed time: 0.4222
+2020-10-26 22:21:02.316 -06:00 [Information] Action executed - elapsed time: 0.2556
+2020-10-26 22:21:03.710 -06:00 [Information] Action executed - elapsed time: 4.5585
+2020-10-26 22:21:05.130 -06:00 [Information] Action executed - elapsed time: 1.0278
+2020-10-26 22:42:23.975 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-26 22:42:24.054 -06:00 [Information] Hosting environment: "Development"
+2020-10-26 22:42:24.058 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-26 22:42:25.214 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:42:25.220 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:42:25.228 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-26 22:42:25.288 -06:00 [Information] Action executed - elapsed time: 908.8541
+2020-10-26 22:42:44.492 -06:00 [Information] Action executed - elapsed time: 0.5172
+2020-10-26 22:42:45.531 -06:00 [Information] Action executed - elapsed time: 0.2759
+2020-10-26 22:42:46.889 -06:00 [Information] Action executed - elapsed time: 11.4231
+2020-10-26 22:42:48.165 -06:00 [Information] Action executed - elapsed time: 8.3985
+2020-10-26 22:42:49.425 -06:00 [Information] Action executed - elapsed time: 15.0693
+2020-10-26 22:42:50.635 -06:00 [Information] Action executed - elapsed time: 0.9481
+2020-10-26 22:42:51.481 -06:00 [Information] Action executed - elapsed time: 2.1946
+2020-10-26 22:42:53.508 -06:00 [Information] Action executed - elapsed time: 105.9093
+2020-10-26 22:42:58.481 -06:00 [Information] Action executed - elapsed time: 202.0421
