@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using BethanysPieShop.Auth;
 using BethanysPieShop.Filters;
@@ -14,7 +15,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -72,6 +75,15 @@ namespace BethanysPieShop
 
             //LOCALIZATION!
             services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+
+            services.AddDistributedSqlServerCache(options =>
+            {
+                options.ConnectionString =
+                    Configuration.GetConnectionString("DefaultConnection");
+                options.SchemaName = "dbo";
+                options.TableName = "TestCache";
+            });
+
             services.AddMvc(
              config => { config.Filters.AddService(typeof(TimerAction)); }
              )
@@ -79,6 +91,18 @@ namespace BethanysPieShop
                    LanguageViewLocationExpanderFormat.Suffix,
                    opts => { opts.ResourcesPath = "Resources"; })
                .AddDataAnnotationsLocalization();
+
+            //response compression with gzip 
+            services.AddResponseCompression(options =>
+            {
+                options.EnableForHttps = true;
+                options.MimeTypes =
+                    ResponseCompressionDefaults.MimeTypes.Concat(new[] { "imagejpeg" });
+            });
+
+            services.Configure<GzipCompressionProviderOptions>
+                (options => options.Level =
+                    System.IO.Compression.CompressionLevel.Optimal);
 
             services.Configure<RequestLocalizationOptions>(
            options =>
@@ -99,6 +123,7 @@ namespace BethanysPieShop
 
             //Get access to session objects in classes (by default only has access in controllers without AddHttpContextAccessor)
             services.AddHttpContextAccessor();
+            services.AddMemoryCache();
             services.AddSession();
 
 
@@ -124,10 +149,20 @@ namespace BethanysPieShop
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILoggerFactory loggerFactory,
+             IHostApplicationLifetime lifetime, IDistributedCache cache)
         {
 
-           // app.UseWelcomePage();
+            // app.UseWelcomePage();
+
+            lifetime.ApplicationStarted.Register(() =>
+            {
+                var currentTimeUTC = DateTime.UtcNow.ToString();
+                byte[] encodedCurrentTimeUTC = Encoding.UTF8.GetBytes(currentTimeUTC);
+                var options = new DistributedCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromSeconds(20));
+                cache.Set("cachedTimeUTC", encodedCurrentTimeUTC, options);
+            });
 
             if (env.IsDevelopment())
             {
@@ -141,6 +176,9 @@ namespace BethanysPieShop
          
 
             app.UseHttpsRedirection();
+
+            app.UseResponseCompression();
+
             //By default will search in directoy wwwrot
             app.UseStaticFiles();
             //be sure it is before UseRouting!

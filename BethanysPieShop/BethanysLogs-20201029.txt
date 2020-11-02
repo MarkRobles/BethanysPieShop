@@ -1,0 +1,33 @@
+2020-10-29 00:05:51.270 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-29 00:05:51.367 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-29 00:05:51.393 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-29 00:05:51.535 -06:00 [Information] Action executed - elapsed time: 1768.2687
+2020-10-29 00:05:54.313 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-29 00:05:54.322 -06:00 [Information] Hosting environment: "Development"
+2020-10-29 00:05:54.337 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-29 00:08:19.164 -06:00 [Information] Action executed - elapsed time: 48.5764
+2020-10-29 00:11:23.126 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-29 00:11:23.201 -06:00 [Information] Hosting environment: "Development"
+2020-10-29 00:11:23.206 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-29 00:11:23.696 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-29 00:11:23.702 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-29 00:11:23.709 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-29 00:11:23.782 -06:00 [Information] Action executed - elapsed time: 1205.0086
+2020-10-29 00:11:38.394 -06:00 [Information] Action executed - elapsed time: 58.0329
+2020-10-29 00:12:55.008 -06:00 [Warning] Error unprotecting the session cookie.
+System.Security.Cryptography.CryptographicException: The payload was invalid.
+   at Microsoft.AspNetCore.DataProtection.Cng.CbcAuthenticatedEncryptor.DecryptImpl(Byte* pbCiphertext, UInt32 cbCiphertext, Byte* pbAdditionalAuthenticatedData, UInt32 cbAdditionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.Cng.Internal.CngAuthenticatedEncryptorBase.Decrypt(ArraySegment`1 ciphertext, ArraySegment`1 additionalAuthenticatedData)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.DangerousUnprotect(Byte[] protectedData, Boolean ignoreRevocationErrors, Boolean& requiresMigration, Boolean& wasRevoked)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+2020-10-29 00:12:55.034 -06:00 [Information] Action executed - elapsed time: 16.8817
+2020-10-29 00:15:29.314 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-29 00:15:29.396 -06:00 [Information] Hosting environment: "Development"
+2020-10-29 00:15:29.404 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-29 00:15:29.722 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-29 00:15:29.728 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-29 00:15:29.738 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-29 00:15:29.840 -06:00 [Information] Action executed - elapsed time: 1434.0494
+2020-10-29 00:15:41.861 -06:00 [Information] Action executed - elapsed time: 47.2498

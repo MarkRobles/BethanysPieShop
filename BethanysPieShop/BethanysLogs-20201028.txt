@@ -1,0 +1,162 @@
+2020-10-28 19:43:50.933 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 19:43:51.009 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 19:43:51.013 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 19:44:41.830 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 19:44:41.843 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 19:44:41.849 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 19:44:54.590 -06:00 [Information] Action executed - elapsed time: 63085.7171
+2020-10-28 19:45:08.675 -06:00 [Information] Action executed - elapsed time: 7298.8559
+2020-10-28 19:45:10.774 -06:00 [Information] Action executed - elapsed time: 0.3188
+2020-10-28 19:45:11.792 -06:00 [Information] Action executed - elapsed time: 0.2104
+2020-10-28 19:45:13.502 -06:00 [Information] Action executed - elapsed time: 0.0762
+2020-10-28 19:45:14.266 -06:00 [Information] Action executed - elapsed time: 0.2855
+2020-10-28 19:46:21.165 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 19:46:21.239 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 19:46:21.244 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 19:46:22.403 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 19:46:22.411 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 19:46:22.419 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 19:46:24.590 -06:00 [Information] Action executed - elapsed time: 3034.5705
+2020-10-28 19:46:55.373 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 19:46:55.457 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 19:46:55.466 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 19:47:03.736 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 19:47:03.744 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 19:47:03.751 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 19:47:05.242 -06:00 [Information] Action executed - elapsed time: 9363.6045
+2020-10-28 19:47:13.968 -06:00 [Information] Action executed - elapsed time: 4388.2558
+2020-10-28 20:06:09.697 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 20:06:09.809 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 20:06:09.818 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 20:06:11.599 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 20:06:11.606 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 20:06:11.612 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 20:06:16.992 -06:00 [Information] Action executed - elapsed time: 6616.1712
+2020-10-28 20:06:36.934 -06:00 [Information] Action executed - elapsed time: 57.3878
+2020-10-28 20:07:18.740 -06:00 [Information] Action executed - elapsed time: 20.7311
+2020-10-28 23:12:39.926 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 23:12:40.117 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 23:12:40.122 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 23:12:40.170 -06:00 [Error] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+BethanysPieShop.Controllers.HomeController.OnPostResetCachedTime (BethanysPieShop)
+BethanysPieShop.Controllers.HomeController.OnGetAsync (BethanysPieShop)
+BethanysPieShop.Controllers.HomeController.Index (BethanysPieShop)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-28 23:16:23.586 -06:00 [Information] Action executed - elapsed time: 4.5099
+2020-10-28 23:16:29.428 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 23:16:29.438 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 23:16:29.444 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 23:16:29.617 -06:00 [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Views_Home_Index.ExecuteAsync() in C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop\Views\Home\Index.cshtml:line 21
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-28 23:16:53.225 -06:00 [Information] Action executed - elapsed time: 3.4142
+2020-10-28 23:17:41.570 -06:00 [Information] Action executed - elapsed time: 4.5848
+2020-10-28 23:19:22.276 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:19:22.345 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:19:22.354 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:19:22.369 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 23:19:22.373 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 23:19:22.375 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 23:19:22.448 -06:00 [Information] Action executed - elapsed time: 2716.8415
+2020-10-28 23:19:31.817 -06:00 [Information] Action executed - elapsed time: 38.0401
+2020-10-28 23:19:34.543 -06:00 [Information] Action executed - elapsed time: 12.1003
+2020-10-28 23:20:17.554 -06:00 [Information] Action executed - elapsed time: 1.0137
+2020-10-28 23:36:52.226 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 23:36:52.304 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 23:36:52.309 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 23:36:52.999 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:36:53.006 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:36:53.012 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:36:53.069 -06:00 [Information] Action executed - elapsed time: 974.6646
+2020-10-28 23:36:54.310 -06:00 [Warning] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2020-10-28 23:37:22.759 -06:00 [Information] Action executed - elapsed time: 81.9577
+2020-10-28 23:37:23.562 -06:00 [Warning] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2020-10-28 23:37:57.689 -06:00 [Information] Action executed - elapsed time: 10.1983
+2020-10-28 23:37:57.981 -06:00 [Warning] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2020-10-28 23:40:59.783 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 23:40:59.870 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 23:40:59.874 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 23:41:00.626 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:41:00.632 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:41:00.639 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:41:00.692 -06:00 [Information] Action executed - elapsed time: 1034.7701
+2020-10-28 23:41:00.695 -06:00 [Information] Action executed - elapsed time: 1034.7701
+2020-10-28 23:41:01.992 -06:00 [Warning] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2020-10-28 23:41:11.629 -06:00 [Information] Action executed - elapsed time: 59.7939
+2020-10-28 23:41:11.633 -06:00 [Information] Action executed - elapsed time: 59.7939
+2020-10-28 23:41:11.976 -06:00 [Warning] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2020-10-28 23:42:36.973 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 23:42:37.033 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 23:42:37.037 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 23:42:37.743 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:42:37.750 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:42:37.757 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:42:37.811 -06:00 [Information] Action executed - elapsed time: 959.5403
+2020-10-28 23:42:37.813 -06:00 [Information] Action executed - elapsed time: 959.5403
+2020-10-28 23:42:40.208 -06:00 [Warning] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2020-10-28 23:42:57.404 -06:00 [Information] Action executed - elapsed time: 63.0194
+2020-10-28 23:42:57.408 -06:00 [Information] Action executed - elapsed time: 63.0194
+2020-10-28 23:42:57.871 -06:00 [Warning] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2020-10-28 23:44:03.488 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 23:44:03.567 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 23:44:03.573 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 23:44:04.251 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:44:04.258 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:44:04.265 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:44:04.323 -06:00 [Information] Action executed - elapsed time: 935.0595
+2020-10-28 23:44:04.325 -06:00 [Information] Action executed - elapsed time: 935.0595
+2020-10-28 23:44:05.628 -06:00 [Warning] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2020-10-28 23:44:24.231 -06:00 [Information] Action executed - elapsed time: 72.8924
+2020-10-28 23:44:24.234 -06:00 [Information] Action executed - elapsed time: 72.8924
+2020-10-28 23:44:24.564 -06:00 [Warning] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2020-10-28 23:45:22.820 -06:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-10-28 23:45:22.905 -06:00 [Information] Hosting environment: "Development"
+2020-10-28 23:45:22.910 -06:00 [Information] Content root path: "C:\Users\Marcos\source\repos\BethanysPieShop\BethanysPieShop"
+2020-10-28 23:45:23.871 -06:00 [Warning] No type was specified for the decimal column '"OrderTotal"' on entity type '"Order"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:45:23.877 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"OrderDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:45:23.883 -06:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"Pie"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2020-10-28 23:45:23.938 -06:00 [Information] Action executed - elapsed time: 1254.9982
+2020-10-28 23:45:23.940 -06:00 [Information] Action executed - elapsed time: 1254.9982
+2020-10-28 23:45:25.632 -06:00 [Warning] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2020-10-28 23:45:31.530 -06:00 [Information] Action executed - elapsed time: 77.082
+2020-10-28 23:45:31.536 -06:00 [Information] Action executed - elapsed time: 77.082
+2020-10-28 23:45:31.906 -06:00 [Warning] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
