@@ -47,8 +47,14 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                @*<cache expires-after="@TimeSpan.FromSeconds(20)">
+                    @await Component.InvokeAsync("CategoryMenu")
+                </cache>*@
 
-                @await Component.InvokeAsync("CategoryMenu")
+                <distributed-cache name="my-distributed-cache-unique-key-101">
+                    @await Component.InvokeAsync("CategoryMenu")
+                </distributed-cache>
+
                 @await Component.InvokeAsync("ShoppingCartSummary")
                 <li class="nav-item"><a class="nav-link" asp-controller="Contact" asp-action="Index" asp-area="">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index" asp-area="Promo">Promotions</a></li>
